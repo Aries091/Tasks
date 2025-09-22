@@ -14,7 +14,6 @@ app.get('/', (req, res) => {
    res.json({ message: 'Server is working!' });
 });
 
-// Remove the try-catch to see the real error
 const authRoutes = require('./routes/auth');
 app.use('/api/auth', authRoutes);
 
